@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кібербезпека: тренди та загрози</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px;text-align: justify; }
+        header { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
+        nav a { text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+        .current-page { font-weight: bold; color: #333; }
+        main { display: flex; gap: 20px; }
+        article { flex: 3; }
+        aside { flex: 1; border-left: 1px solid #ccc; padding-left: 20px; }
+        aside img { width: 100%; height: auto; display: block; margin-top: 10px; }
+        figure { margin: 20px 0; text-align: center; }
+        figcaption { font-style: italic; color: #555; margin-top: 5px; }
+        footer { border-top: 2px solid #ccc; padding-top: 20px; margin-top: 20px; }
+        form { display: flex; flex-direction: column; gap: 10px; }
+        form label, form button { display: block; }
+        form input, form textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        #email-error { color: red; display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Кібербезпека: тренди та загрози</h1>
+        <nav role="navigation" aria-label="Головне меню">
+            <ul>
+                <li><a href="#main" >Головна</a></li>
+                <li><a href="#news" class="current-page" aria-current="page">Новини</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <p>У сучасному цифровому світі кібербезпека стає одним з найважливіших питань. Зі зростанням кількості підключених пристроїв і обсягів даних, загрози стають все більш витонченими та складними. Сьогодні, хакери використовують штучний інтелект для автоматизації атак, що ускладнює їх виявлення традиційними методами захисту.</p>
+            <p>Одним із ключових трендів є розробка систем безпеки, що базуються на машинному навчанні. Ці системи здатні аналізувати величезні обсяги даних і виявляти аномалії в поведінці мережі, що може вказувати на початок атаки. Таким чином, захист стає проактивним, а не лише реактивним.</p>
+            <p>Зростає також увага до захисту персональних даних. Регуляції, подібні до GDPR, стають більш жорсткими, що змушує компанії інвестувати в надійніші системи шифрування та управління даними. Це не лише захищає користувачів, але й підвищує довіру до брендів, що дбають про конфіденційність.</p>
+
+            <section>
+                <h2>Ключові факти</h2>
+                <ol>
+                    <li>Зростає кількість атак з використанням ШІ.</li>
+                    <li>Проактивний захист стає пріоритетом.</li>
+                    <li>Посилюються вимоги до захисту персональних даних.</li>
+                </ol>
+
+                <h2>Пов’язані теми</h2>
+                <ul>
+                    <li>Шифрування даних</li>
+                    <li>Захист приватності</li>
+                    <li>Аналіз загроз</li>
+                    <li>Регуляції в сфері IT</li>
+                </ul>
+
+                <figure>
+                    <img src="https://i.pinimg.com/736x/83/63/4a/83634aa2da2cc0ea59fbadd6aa1bbe95.jpg" alt="Графічне зображення кібербезпеки з елементами захисту та шифрування.">
+                    <figcaption>Захист даних у цифрову епоху.</figcaption>
+                </figure>
+                <a href="article1.html">Дізнатися більше про нові технології.</a>
+            </section>
+        </article>
+        
+        <aside aria-labelledby="related-heading">
+            <h2 id="related-heading">Схожі статті</h2>
+            <h3>Нові технології в 2025 році</h3>
+            <time datetime="2025-07-25">25.07.2025</time>
+            <img src="https://i.pinimg.com/736x/fe/6d/58/fe6d58f8c3a63d84e8fe56c9b5ad9f72.jpg" alt="Зображення на тему нових технологій та інновацій." aria-hidden="true">
+            <p>У 2025 році технологічний ландшафт змінюється з неймовірною швидкістю. Штучний інтелект стає невід’ємною частиною повсякденного життя.</p>
+            <a href="article1.html">Читати далі</a>
+        </aside>
+    </main>
+
+    <footer>
+        <h2>Залишити відгук</h2>
+        <form action="#" method="post">
+            <label for="email">Email-адреса:</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <span id="email-error" aria-live="polite" style="display:none;">Введіть коректну email-адресу</span>
+            
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" required minlength="10"></textarea>
+            
+            <button type="submit" aria-label="Надіслати відгук">Надіслати</button>
+        </form>
+    </footer>
+
+</body>
+</html>

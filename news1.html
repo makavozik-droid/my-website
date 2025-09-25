@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нові технології в 2025 році</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; text-align: justify; }
+        header { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
+        nav a { text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+        .current-page { font-weight: bold; color: #333; }
+        main { display: flex; gap: 20px; }
+        article { flex: 3; }
+        aside { flex: 1; border-left: 1px solid #ccc; padding-left: 20px; }
+        aside img { width: 100%; height: auto; display: block; margin-top: 10px; }
+        figure { margin: 20px 0; text-align: center; }
+        figcaption { font-style: italic; color: #555; margin-top: 5px; }
+        footer { border-top: 2px solid #ccc; padding-top: 20px; margin-top: 20px; }
+        form { display: flex; flex-direction: column; gap: 10px; }
+        form label, form button { display: block; }
+        form input, form textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        #email-error { color: red; display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Нові технології в 2025 році</h1>
+        <nav role="navigation" aria-label="Головне меню">
+            <ul>
+                <li><a href="article1.html" class="current-page" aria-current="page">Головна</a></li>
+                <li><a href="#news">Новини</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <p>У 2025 році технологічний ландшафт змінюється з неймовірною швидкістю. Штучний інтелект стає невід’ємною частиною повсякденного життя, допомагаючи оптимізувати робочі процеси та покращувати взаємодію з користувачем. Його інтеграція в різні галузі, від медицини до фінансів, відкриває нові горизонти для інновацій та ефективності.</p>
+            <p>Квантові обчислення, хоча й залишаються на ранній стадії розвитку, демонструють величезний потенціал. Вчені та інженери працюють над створенням стабільних квантових комп’ютерів, здатних вирішувати завдання, недоступні для класичних суперкомп’ютерів. Це може революціонізувати криптографію та фармацевтику.</p>
+            <p>Розвиток 5G-мереж і поява перших 6G-технологій забезпечують надвисоку швидкість передачі даних, що є критично важливим для Інтернету речей (IoT) та автономних транспортних засобів. Це створює нові можливості для взаємопов’язаних систем і розумних міст, де кожен пристрій може спілкуватися з іншим.</p>
+
+            <section>
+                <h2>Ключові факти</h2>
+                <ol>
+                    <li>Штучний інтелект (ШІ) інтегрується в повсякденні програми.</li>
+                    <li>Квантові обчислення роблять перші кроки до практичного застосування.</li>
+                    <li>6G-технології забезпечать надшвидкий зв'язок для IoT.</li>
+                </ol>
+
+                <h2>Пов’язані теми</h2>
+                <ul>
+                    <li>Квантова фізика</li>
+                    <li>Автономні системи</li>
+                    <li>Інтернет речей (IoT)</li>
+                    <li>Машинне навчання</li>
+                </ul>
+
+                <figure>
+                    <img src="https://i.pinimg.com/736x/fe/6d/58/fe6d58f8c3a63d84e8fe56c9b5ad9f72.jpg" alt="Ілюстрація нових технологій у 2025 році з елементами ШІ та квантових обчислень.">
+                    <figcaption>Інновації, що формують майбутнє.</figcaption>
+                </figure>
+                <a href="article2.html">Дізнатися більше про кібербезпеку.</a>
+            </section>
+        </article>
+        
+        <aside aria-labelledby="related-heading">
+            <h2 id="related-heading">Схожі статті</h2>
+            <h3>Кібербезпека: тренди та загрози</h3>
+            <time datetime="2025-07-25">25.07.2025</time>
+            <img src="https://i.pinimg.com/736x/83/63/4a/83634aa2da2cc0ea59fbadd6aa1bbe95.jpg" alt="Зображення на тему кібербезпеки та її загроз." aria-hidden="true">
+            <p>У світі, де технології розвиваються з надзвичайною швидкістю, загрози кібербезпеці стають все більш витонченими.</p>
+            <a href="article2.html">Читати далі</a>
+        </aside>
+    </main>
+
+    <footer>
+        <h2>Залишити відгук</h2>
+        <form action="#" method="post">
+            <label for="email">Email-адреса:</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <span id="email-error" aria-live="polite" style="display:none;">Введіть коректну email-адресу</span>
+            
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" required minlength="10"></textarea>
+            
+            <button type="submit" aria-label="Надіслати відгук">Надіслати</button>
+        </form>
+    </footer>
+
+</body>
+</html>
