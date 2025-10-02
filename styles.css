@@ -1,0 +1,122 @@
+/* Зберігання кольорів у змінних */
+:root {
+    --primary-color: #0056b3; /* Синій */
+    --secondary-color: #333;   /* Темно-сірий */
+    --background-light: #f4f4f4;
+    --text-color: #444;
+    --highlight-color: #ff6347; /* Червоний */
+}
+
+/* Використання селекторів:
+    - Тег: body, h1, p, a, input, button
+    - Клас: .news-article, .article-title, .form-field
+    - ID: #home-link
+    - Комбінації: h1.article-title
+    - Псевдокласи: :hover, :focus
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: white;
+}
+
+h1.article-title {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Інтерактивні елементи */
+a, button {
+    cursor: pointer; /* Зміна курсору */
+}
+
+/* Стилі для посилань */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+/* Селектор за ID */
+#home-link {
+    font-weight: bold;
+}
+
+/* Стилі для форми */
+.subscribe-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Виділення полів форми */
+.form-field {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Зміна бордеру при фокусі */
+.form-field:focus {
+    outline: none;
+    border-color: var(--primary-color); /* Зміна кольору бордеру */
+}
+
+.subscribe-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Адаптивність (Responsive Design) */
+.main-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Медіа-запит для екранів шириною менше 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .news-article {
+        padding: 0 5px;
+    }
+
+    .article-title {
+        font-size: 24px;
+    }
+}
